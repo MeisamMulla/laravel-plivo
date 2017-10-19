@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Providers;
+namespace MeisamMulla\Plivo;
 
 use Illuminate\Support\ServiceProvider;
-use Plivo\RestAPI as Plivo;
+use Plivo\RestAPI as PlivoAPI;
 
 class ServiceProvider extends ServiceProvider {
 	/**
@@ -13,7 +13,7 @@ class ServiceProvider extends ServiceProvider {
 	 */
 	public function register() {
 		$this->app->singleton('Plivo', function ($app) {
-			return new Plivo($app['config']['plivo']['auth_id'], $app['config']['plivo']['auth_token']);
+			return new PlivoAPI($app['config']['plivo']['auth_id'], $app['config']['plivo']['auth_token']);
 		});
 	}
 
