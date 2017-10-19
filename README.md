@@ -1,7 +1,7 @@
-#Plivo for Laravel
+# Plivo for Laravel
 This is a simple wrapper around `plivo/plivo-php` that creates a `Plivo` facade for Laravel.
 
-##Installation
+## Installation
 Navigate your your laravel installation and type the following into the command line 
 
 ```bash
@@ -30,7 +30,7 @@ PLIVO_AUTH_TOKEN=YOURAUTHTOKEN
 
 Your Auth ID and Token can be found in your Plivo dashboard.
 
-##Usage
+## Usage
 Refer to the [PHP Helper Docs](https://www.plivo.com/docs/helpers/php/#methods) for all the methods available. Simple example on how to send a SMS:
 
 ```php
@@ -40,13 +40,13 @@ namespace App\Http\Controllers;
 use Plivo;
 
 class PlivoTestController extends Controller {
-	public function sendMessage() {
-		Plivo::send_message([
-			'src' => '16045555555',
-			'dst' => '17785555555',
-			'text' => 'This is a text message',
-		]);
-	}
+    public function sendMessage() {
+        Plivo::send_message([
+            'src' => '16045555555',
+            'dst' => '17785555555',
+            'text' => 'This is a text message',
+        ]);
+    }
 }
 
 ```
