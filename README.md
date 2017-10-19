@@ -5,7 +5,7 @@ This is a simple wrapper around `plivo/plivo-php` that creates a `Plivo` facade 
 Navigate your your laravel installation and type the following into the command line 
 
 ```bash
-composer require meisam-mulla/laravel-plivo
+composer require meisam-mulla/laravel-plivo:dev-master
 ```
 
 Add the following in your ServiceProvider array in config/app.php
