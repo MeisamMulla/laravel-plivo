@@ -13,7 +13,7 @@ class ServiceProvider extends IlluminateServiceProvider {
 	 */
 	public function boot() {
 		$this->publishes([
-			__DIR__ . '/../plivo.php' => config_path('plivo.php'),
+			__DIR__ . '/../config/plivo.php' => config_path('plivo.php'),
 		]);
 	}
 
