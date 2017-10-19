@@ -38,5 +38,6 @@
                 "Plivo": "MeisamMulla\\Plivo\\Facade"
             }
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
