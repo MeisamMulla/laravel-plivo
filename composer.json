@@ -1,0 +1,42 @@
+{
+    "name": "meisam-mulla/laravel-plivo",
+    "description": "A Plivo-PHP Wrapper for Laravel",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "plivo",
+        "voice",
+        "sms"
+    ],
+    "authors": [
+    {
+        "name": "Meisam Mulla",
+        "email": "meisam@mulla.ca"
+    }],
+    "require":
+    {
+        "php": ">=5.5.9",
+        "illuminate/support": "5.1.x|5.2.x|5.3.x|5.4.x|5.5.x",
+        "plivo/plivo-php": "^1.1"
+    },
+    "autoload":
+    {
+        "psr-4":
+        {
+            "MeisamMulla\\Plivo\\": "src"
+        }
+    },
+    "extra":
+    {
+        "laravel":
+        {
+            "providers": [
+                "MeisamMulla\\Plivo\\ServiceProvider"
+            ],
+            "aliases":
+            {
+                "Plivo": "MeisamMulla\\Plivo\\Facade"
+            }
+        }
+    },
+}
