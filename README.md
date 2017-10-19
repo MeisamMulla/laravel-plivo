@@ -16,7 +16,7 @@ MeisamMulla\Plivo\ServiceProvider::class,
 
 Add the following to your aliases array
 ```php
-MeisamMulla\Plivo\Facade::class,
+'Plivo' => MeisamMulla\Plivo\Facade::class,
 ```
 
 Run `php artisan vendor:publish`
