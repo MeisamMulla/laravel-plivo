@@ -7,6 +7,17 @@ use Plivo\RestAPI as PlivoAPI;
 
 class ServiceProvider extends IlluminateServiceProvider {
 	/**
+	 * Perform post-registration booting of services.
+	 *
+	 * @return void
+	 */
+	public function boot() {
+		$this->publishes([
+			__DIR__ . '/../plivo.php' => config_path('plivo.php'),
+		]);
+	}
+
+	/**
 	 * Register the application services.
 	 *
 	 * @return void
