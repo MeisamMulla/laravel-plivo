@@ -2,10 +2,10 @@
 
 namespace MeisamMulla\Plivo;
 
-use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\ServiceProvider as IlluminateServiceProvider;
 use Plivo\RestAPI as PlivoAPI;
 
-class ServiceProvider extends ServiceProvider {
+class ServiceProvider extends IlluminateServiceProvider {
 	/**
 	 * Register the application services.
 	 *
